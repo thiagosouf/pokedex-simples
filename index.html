@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <label for="usuario">Digite o nome do Pokemon:</label>
+            <input name="usuario" type="text" placeholder="pikachu" />
+            <button onclick="acionarPesquisa()">Pesquisar!</button>
+        </div>
+        <div class="dados">
+            <img src="https://via.placeholder.com/150" alt="foto do pokemon" />
+            <ul>
+                <li>Nome: <span class="nome">-</span></li>
+                <li>Numero: <span class="numero">-</span></li>
+                <li>HP: <span class="hp">-</span></li>
+                <li>Ataque: <span class="ataque">-</span></li>
+                <li>Defesa: <span class="defesa">-</span></li>
+                <li>Ataque Especial: <span class="ataque-especial">-</span></li>
+                <li>Defesa Especial: <span class="defesa-especial">-</span></li>
+                <li>Speed: <span class="speed">-</span></li>
+            </ul>
+        </div>
+    </div>  
+
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
