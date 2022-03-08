@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin:0;
   }
   
   body {
@@ -9,17 +10,30 @@
   
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
   
     font-family: "Roboto", sans-serif;
   }
   
+.caixa-pesquisar{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.caixa-pesquisar button{
+  margin-top: 10px;
+  height: 50px;
+}
+
   .dados {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 30px;
     max-width: 500px;
+    /* background-color: #78C74F; */
   }
   
   .dados ul {
@@ -35,5 +49,6 @@
     width: 150px;
     height: 150px;
     border-radius: 5px;
+    /* background-color: aqua; */
   }
   

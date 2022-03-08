@@ -2,7 +2,8 @@
 
 function acionarPesquisa(){
     if (validarNomePokemon()){
-        const pokemon=document.querySelector("input").value;
+        const nomeRecebido=document.querySelector("input").value;
+        const pokemon = nomeRecebido.toLowerCase()
         obterInfosDaAPI(pokemon);
         }else{
             alert ("Preencha com o nome do Pokemon!")
